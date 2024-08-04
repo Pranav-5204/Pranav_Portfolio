@@ -27,7 +27,13 @@ body {
     from { transform: translateX(-50px); opacity: 0; }
     to { transform: translateX(0); opacity: 1; }
   }
-  
+
+  .profile-name {
+    margin: 10px 0; /* Space above and below the name */
+    font-size: 1.5em; /* Larger font size for the name */
+    color: #4CAF50; /* Green color for the name */
+  }
+
   .profile-picture {
     width: 150px; /* Adjust size as needed */
     border-radius: 50%; /* Circular image */
@@ -272,4 +278,3 @@ body {
       align-items: center; /* Center align project boxes */
     }
   }
-  
