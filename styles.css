@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .App {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #1e1e1e; /* Darker header */
+    padding: 20px;
+    color: #ffffff;
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateX(-50px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+  
+  .profile-picture {
+    width: 150px; /* Adjust size as needed */
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 10px; /* Space below the image */
+    background-color: #2e2e2e; /* Blend with background */
+    padding: 10px; /* Add padding for blending */
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center; /* Center align the links */
+    margin: 10px 0; /* Space between the profile picture and links */
+  }
+  
+  .contact-links a {
+    margin: 0 10px; /* Space between each link */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .contact-links a:hover {
+    color: #ddd; /* Lighter color on hover */
+  }
+  
+  .section {
+    background-color: #1e1e1e; /* Dark section background */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  }
+  
+  .section h2 {
+    color: #4CAF50; /* Green color for section titles */
+  }
+  
+  .box {
+    background-color: #2e2e2e; /* Darker box background */
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  }
+  
+  .info-box {
+    background-color: #4CAF50; /* Green box for CGPA */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px 0;
+  }
+  
+  .grade-box {
+    background-color: #007BFF; /* Blue box for grades */
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+  }
+  
+  .company-container {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Space between logo, name, and timeline */
+    margin-bottom: 15px; /* Space between companies */
+  }
+  
+  .company-logo {
+    width: 60px; /* Adjust size as needed */
+    margin-right: 10px;
+  }
+  
+  .company-info {
+    flex-grow: 1; /* Allow company info to grow and take up available space */
+    text-align: center; /* Center align the company name */
+  }
+  
+  .timeline-box {
+    background-color: #4CAF50; /* Green box for timeline */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 150px; /* Fixed width for timeline boxes */
+    text-align: center; /* Center align the text in the timeline box */
+  }
+  
+  .skills-container, .awards-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .skills-box, .awards-box {
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 10px;
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  }
+  
+  .skills-box h4, .awards-box h4 {
+    margin-top: 0;
+    color: #4CAF50; /* Green color for box titles */
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-direction: column; /* Stack project boxes vertically */
+    align-items: center; /* Center align project boxes */
+  }
+  
+  .project-box {
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 90%; /* Adjust width as needed */
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  }
+  
+  .project-container {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    justify-content: space-between; /* Space between info and timeline */
+  }
+  
+  .project-info {
+    flex-grow: 1; /* Allow info to grow and take up available space */
+  }
+  
+  .courses-container {
+    margin: 10px 0;
+  }
+  
+  .course-box {
+    background-color: #2e2e2e;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  }
+  
+  .organization-box {
+    background-color: #007BFF; /* Blue box for organizations */
+    color: white;
+    padding: 3px 5px; /* Smaller padding for smaller boxes */
+    border-radius: 3px;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  
+  .awards-container {
+    display: flex;
+    justify-content: center; /* Center align awards boxes */
+    flex-wrap: wrap; /* Allow wrapping */
+    margin: 10px 0;
+  }
+  
+  .awards-box {
+    background-color: #2e2e2e;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 250px; /* Fixed width for awards boxes */
+    animation: slideIn 1s ease-in-out; /* Slide-in animation */
+  }
+  
+  .my-picture {
+    width: 150px; /* Adjust size as needed */
+    border-radius: 75px; /* Circular image */
+    margin: 10px 0;
+  }
+  
+  .content p, .content ul {
+    margin: 0;
+    text-align: left;
+  }
+  
+  .content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .content ul li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: white; /* All links in white */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ddd; /* Lighter color on hover */
+  }
+  
+  @media (max-width: 600px) {
+    .header p {
+      display: block;
+    }
+  
+    .header a {
+      display: block;
+      margin: 5px 0;
+    }
+  
+    .section {
+      margin: 10px 0;
+    }
+  
+    .skills-container, .awards-container {
+      flex-direction: column;
+    }
+  
+    .skills-box, .awards-box {
+      margin: 10px 0;
+    }
+  
+    .projects-container {
+      flex-direction: column; /* Stack project boxes vertically on small screens */
+      align-items: center; /* Center align project boxes */
+    }
+  }
