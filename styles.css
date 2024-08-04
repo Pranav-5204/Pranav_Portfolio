@@ -52,6 +52,17 @@ body {
     color: #ddd; /* Lighter color on hover */
   }
   
+  .summary {
+    background-color: #2e2e2e; /* Darker background for contrast */
+    color: #ffffff; /* White text color */
+    padding: 15px; /* Add padding around the text */
+    border-radius: 8px; /* Rounded corners */
+    margin: 15px 0; /* Space above and below the summary */
+    font-size: 1.1em; /* Slightly larger font size */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+    display: inline-block; /* Make it fit the content */
+}
+  
   .section {
     background-color: #1e1e1e; /* Dark section background */
     margin: 20px 0;
@@ -114,6 +125,13 @@ body {
     border-radius: 5px;
     width: 150px; /* Fixed width for timeline boxes */
     text-align: center; /* Center align the text in the timeline box */
+  }
+  
+  .divider {
+    border: none; /* Remove default border */
+    height: 1px; /* Height of the line */
+    background-color: #4CAF50; /* Color of the line */
+    margin: 20px 0; /* Space above and below the line */
   }
   
   .skills-container, .awards-container {
@@ -254,3 +272,4 @@ body {
       align-items: center; /* Center align project boxes */
     }
   }
+  
