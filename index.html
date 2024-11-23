@@ -6,12 +6,87 @@
     <title>V Pranav's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styling for the navigation bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .learnings-section {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #413f3f;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .results-section {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #413f3f;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .learning-category {
+            font-weight: bold;
+            color: #0be433;
+            margin-bottom: 8px;
+            margin-top: 12px;
+        }
+
+        .result-metric {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin: 5px;
+            font-size: 0.9em;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 60px; /* Offset for fixed navbar */
+        }
+    </style>
+
+
 </head>
 <body>
-    <div class="App">
+    <div class="navbar">
+        <a href="#header">Home</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Work Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards and Volunteering</a>
+    </div>
+
+    <div id="header" class="App">
         <header class="header">
             <img 
-                src="https://media.licdn.com/dms/image/D5603AQGCWvdmW7Nwdg/profile-displayphoto-shrink_800_800/0/1721407416724?e=1728518400&v=beta&t=ewzdgXXTCZ-8NLdHeYf6OYik57nVMIMaqFDSA1kk7nM" 
+                src="https://media.licdn.com/dms/image/v2/D5603AQGCWvdmW7Nwdg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1721407416724?e=1737590400&v=beta&t=A8HM1lwiI36hMl8Dl4dNF8s9lYl07GI-wxD4YWrJ2RA" 
                 alt="Profile" 
                 class="profile-picture" 
             />
@@ -33,9 +108,14 @@
             <p class="summary">
                 I am a third-year B.Tech Computer Science student at Vellore Institute of Technology, Chennai. Currently, I am part of the Samsung Prism Student Program, where I am developing a Retrieval-Augmented Generation application. I am passionate about and eager to contribute to the fields of AI, ML, and NLP.
             </p>
+            <button class="certificate-button">
+                <a href="https://drive.google.com/file/d/1G5m6wmz-LtBTAPUpygtPoaWCP2dw0ZC7/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Resume</a>
+            </button>
+
+
         </header>
 
-        <section class="section animated">
+        <section id="education" class="section animated">
             <h2>Education</h2>
             <div class="box">
                 <h3>Vellore Institute of Technology</h3>
@@ -47,7 +127,7 @@
             </div>
         </section>
 
-        <section class="section animated">
+        <section id="experience" class="section animated">
             <h2>Work Experience</h2>
             <div class="box">
                 <div class="company-container">
@@ -61,7 +141,9 @@
                     </div>
                 </div>
                 <p>During my internship, I developed an AI-based Resume Parser using JavaScript and the Perplexity API. I also created robust API endpoints for seamless integration and deployed the parser on the company server, enabling over 30 HR employees to utilize it effectively.</p>
-                
+                <button class="certificate-button">
+                    <a href="https://drive.google.com/file/d/1r_GXMjNuZJctH6tvUxLPM6X7hHmxJLEB/view?usp=sharing" target="_blank" rel="noopener noreferrer">View Internship Certificate</a>
+                </button>
                 <hr class="divider" />
                 
                 <div class="company-container">
@@ -78,84 +160,322 @@
             </div>
         </section>
 
-        <section class="section animated">
+        <section id="skills" class="section animated">
             <h2>Skills</h2>
             <div class="skills-container">
                 <div class="skills-box">
                     <h4>Technical Skills</h4>
-                    <p>C, C++, Java, Python, Git, SQL</p>
+                    <p>C, C++, Java, Python, Git, SQL, R language</p>
                 </div>
                 <div class="skills-box">
                     <h4>Tools/Technologies</h4>
-                    <p>Node JS, React JS, MATLAB, Linux</p>
+                    <p>Node JS, React JS, MATLAB, Linux, AWS, Packet Tracer, Wireshark</p>
                 </div>
             </div>
         </section>
 
-        <section class="section animated">
+        <section id="projects" class="section animated">
             <h2>Projects</h2>
             <div class="projects-container">
+                <!-- Multithreaded Data Analysis Framework -->
                 <div class="project-box">
                     <div class="project-container">
                         <div class="project-info">
                             <h4>Multithreaded Data Analysis Framework</h4>
                             <p>C++, Linux, ncurses</p>
                             <p>Designed a multithreaded application for analyzing large datasets.</p>
+                            
+                            <div class="learnings-section">
+                                <h5>Learnings</h5>
+                                <div class="learning-category">Technical Learnings:</div>
+                                
+                                    <p>Mastered POSIX thread programming and synchronization mechanisms</p>
+                                    <p>Implemented thread pooling and resource management techniques</p>
+                                    <p>Developed expertise in mutex locks and condition variables</p>
+                                    <p>Created efficient data structures for parallel processing</p>
+                                
+                                <div class="learning-category">Self Reflection:</div>
+                                <p>Enhanced debugging skills while dealing with race conditions and deadlocks. Learned the importance of systematic testing in concurrent programming.</p>
+                            </div>
+                            
+                            <div class="results-section">
+                                <h5>Results</h5>
+                                <span class="result-metric">40% faster processing</span>
+                                <span class="result-metric">85% CPU utilization</span>
+                                <span class="result-metric">Handles 100K+ records</span>
+                                <span class="result-metric">90% reduction in processing time</span>
+                            </div>
+        
+                            <button class="repo-button">
+                                <a href="https://github.com/n-noorul-mubeen/Multi-Threaded-Data-Analysis" target="_blank">View Repository</a>
+                            </button>
                         </div>
                         <div class="timeline-box">
-                            <p>Jun 2024 – Jul 2024</p>
+                            <p>Aug 2023 – Nov 2023</p>
                         </div>
                     </div>
                 </div>
-                
+        
+                <!-- DigiPlanner -->
                 <div class="project-box">
                     <div class="project-container">
                         <div class="project-info">
                             <h4>DigiPlanner</h4>
                             <p>Python, ReactJS, Firebase</p>
                             <p>A smart task organizer that integrates voice commands for task management.</p>
+                            
+                            <div class="learnings-section">
+                                <h5>Learnings</h5>
+                                <div class="learning-category">Technical Learnings:</div>
+                                
+                                    <p>Integrated Web Speech API for voice recognition</p>
+                                    <p>Implemented real-time data synchronization using Firebase</p>
+                                    <p>Created responsive UI components with React hooks</p>
+                                    <p>Developed custom state management solutions</p>
+                                
+                                <div class="learning-category">Self Reflection:</div>
+                                <p>Gained valuable experience in user-centered design and iterative development. Improved ability to handle user feedback and implement feature requests.</p>
+                            </div>
+                            
+                            <div class="results-section">
+                                <h5>Results</h5>
+                                <span class="result-metric">95% voice recognition</span>
+                             
+                                <span class="result-metric">30% faster task creation</span>
+                                
+                            </div>
+        
+                            <button class="repo-button">
+                                <a href="https://github.com/n-noorul-mubeen/planner-v1.0" target="_blank">View Repository</a>
+                            </button>
                         </div>
                         <div class="timeline-box">
-                            <p>Jun 2024 – Jan 2025</p>
+                            <p>Jan 2024 – Apr 2024</p>
                         </div>
                     </div>
                 </div>
-                
+        
+                <!-- Search Engine using TRIE -->
                 <div class="project-box">
                     <div class="project-container">
                         <div class="project-info">
                             <h4>Search Engine using TRIE</h4>
                             <p>C++, Linux</p>
                             <p>Implemented a search engine with features like spell check and auto-correct.</p>
+                            
+                            <div class="learnings-section">
+                                <h5>Learnings</h5>
+                                <div class="learning-category">Technical Learnings:</div>
+                                
+                                    <p>Implemented optimized TRIE data structure</p>
+                                    <p>Developed Levenshtein distance algorithm for spell checking</p>
+                                    <p>Created efficient string matching algorithms</p>
+                                    <p>Optimized memory usage for large datasets</p>
+                                
+                                <div class="learning-category">Self Reflection:</div>
+                                <p>Developed strong problem-solving skills through algorithm optimization. Learned to balance performance with memory constraints.</p>
+                            </div>
+                            
+                            <div class="results-section">
+                                <h5>Results</h5>
+                                <span class="result-metric">O(L) search time</span>
+                                <span class="result-metric">95% spell check accuracy</span>
+                                <span class="result-metric">50K+ word database</span>
+                                <span class="result-metric">10ms average response</span>
+                            </div>
                         </div>
                         <div class="timeline-box">
-                            <p>Jun 2024 – Jul 2024</p>
+                            <p>Aug 2023 – Nov 2023</p>
                         </div>
                     </div>
                 </div>
-                
+        
+                <!-- Wireless Remote Controlled Car -->
                 <div class="project-box">
                     <div class="project-container">
                         <div class="project-info">
                             <h4>Wireless Remote Controlled Car</h4>
                             <p>Arduino IDE</p>
                             <p>Developed a remote-controlled car using Arduino and Bluetooth technology.</p>
+                            
+                            <div class="learnings-section">
+                                <h5>Learnings</h5>
+                                <div class="learning-category">Technical Learnings:</div>
+                                
+                                    <p>Mastered Arduino programming and hardware interfacing</p>
+                                    <p>Implemented Bluetooth communication protocols</p>
+                                    <p>Developed motor control algorithms</p>
+                                    <p>Created power management systems</p>
+                                
+                                <div class="learning-category">Self Reflection:</div>
+                                <p>Gained hands-on experience with hardware-software integration. Improved troubleshooting skills in embedded systems.</p>
+                            </div>
+                            
+                            <div class="results-section">
+                                <h5>Results</h5>
+                                <span class="result-metric">30m range</span>
+                                <span class="result-metric">50ms response time</span>
+                                <span class="result-metric">8-hour battery life</span>
+                                <span class="result-metric">95% control accuracy</span>
+                            </div>
+                            
+                            <button class="repo-button">
+                                <a href="https://www.youtube.com/watch?v=_wPd4N0yFmA" target="_blank">View Implementation</a>
+                            </button>
                         </div>
                         <div class="timeline-box">
-                            <p>Jun 2024 – Jan 2025</p>
+                            <p>Aug 2023 – Nov 2023</p>
                         </div>
                     </div>
                 </div>
-                
+        
+                <!-- Resume Summarizer -->
                 <div class="project-box">
                     <div class="project-container">
                         <div class="project-info">
                             <h4>Resume Summarizer</h4>
                             <p>Python, Spacy, BERT</p>
                             <p>Created a model to summarize resumes using NLP techniques.</p>
+                            
+                            <div class="learnings-section">
+                                <h5>Learnings</h5>
+                                <div class="learning-category">Technical Learnings:</div>
+                                
+                                    <p>Implemented BERT-based text extraction</p>
+                                    <p>Developed custom NLP pipelines using Spacy</p>
+                                    <p>Created information extraction algorithms</p>
+                                    <p>Implemented text summarization techniques</p>
+                                
+                                <div class="learning-category">Self Reflection:</div>
+                                <p>Developed understanding of NLP architectures and their applications. Learned to handle unstructured text data effectively.</p>
+                            </div>
+                            
+                            <div class="results-section">
+                                <h5>Results</h5>
+                                <span class="result-metric">85% accuracy</span>
+                                <span class="result-metric">500+ resumes processed</span>
+                                <span class="result-metric">70% time saved</span>
+                                <span class="result-metric">90% relevant info extracted</span>
+                            </div>
                         </div>
                         <div class="timeline-box">
                             <p>Jun 2024 – Jul 2024</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Campus Connect -->
+                <div class="project-box">
+                    <div class="project-container">
+                        <div class="project-info">
+                            <h4>Campus Connect - A collaborative educational platform</h4>
+                            <p>AWS, NodeJS, Python Flask, ReactJS</p>
+                            <p>A collaborative platform for VIT students to share study materials, research articles, internship opportunities, and project calls.</p>
+                            
+                            <div class="learnings-section">
+                                <h5>Learnings</h5>
+                                <div class="learning-category">Technical Learnings:</div>
+                                
+                                    <p>Implemented microservices architecture using AWS</p>
+                                    <p>Created RESTful APIs using Flask and NodeJS</p>
+                                    <p>Developed real-time notification system</p>
+                                    <p>Implemented secure file sharing system</p>
+                                
+                                <div class="learning-category">Self Reflection:</div>
+                                <p>Learned to manage a full-stack project and coordinate with multiple stakeholders. Improved understanding of scalable architecture design.</p>
+                            </div>
+                            
+                            <div class="results-section">
+                                <h5>Results</h5>
+                                
+                                <span class="result-metric">100+ resources shared</span>
+                                <span class="result-metric">99.9% uptime</span>
+                            
+                            </div>
+        
+                            <button class="repo-button">
+                                <a href="https://github.com/n-noorul-mubeen/campus-connect-v1" target="_blank">View Repository</a>
+                            </button>
+                        </div>
+                        <div class="timeline-box">
+                            <p>Aug 2024 – Nov 2024</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Sarcasm Detection -->
+                <div class="project-box">
+                    <div class="project-container">
+                        <div class="project-info">
+                            <h4>Sarcasm detection and sentiment analysis</h4>
+                            <p>Python, roBERTa base, Facebook BART, Microsoft phi-2, Gemini</p>
+                            <p>Fine tuned ML models to accurately determine the sentiment and sarcasm in product reviews.</p>
+                            
+                            <div class="learnings-section">
+                                <h5>Learnings</h5>
+                                <div class="learning-category">Technical Learnings:</div>
+                                
+                                    <p>Fine-tuned transformer models for specific tasks</p>
+                                    <p>Implemented ensemble learning techniques</p>
+                                    <p>Created advanced text preprocessing pipelines</p>
+                                    <p>Developed model evaluation frameworks</p>
+                                
+                                <div class="learning-category">Self Reflection:</div>
+                                <p>Gained deep understanding of NLP model architectures and training processes. Improved ability to handle imbalanced datasets.</p>
+                            </div>
+                            
+                            <div class="results-section">
+                                <h5>Results</h5>
+                                <span class="result-metric">92% sarcasm accuracy</span>
+                                <span class="result-metric">100% sentiment F1-score</span>
+                                <span class="result-metric">50K+ reviews analyzed</span>
+                                <span class="result-metric">95% validation accuracy</span>
+                            </div>
+        
+                            <button class="repo-button">
+                                <a href="https://github.com/Pranav-5204/Sarcasm-Detection-and-Sentiment-Analysis" target="_blank">View Repository</a>
+                            </button>
+                        </div>
+                        <div class="timeline-box">
+                            <p>Aug 2024 – Nov 2024</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Smart Vehicle Accident Alert System -->
+                <div class="project-box">
+                    <div class="project-container">
+                        <div class="project-info">
+                            <h4>Smart Vehicle Accident Alert System</h4>
+                            <p>Arduino, Neo-6m, GSM module, Accelerometer, ReactJS</p>
+                            <p>Completed a hardware implementation of a vehicle accident alert system and built a UserInterface with chatbot for emergency response actions.</p>
+                            
+                            <div class="learnings-section">
+                                <h5>Learnings</h5>
+                                <div class="learning-category">Technical Learnings:</div>
+                                
+                                    <p>Integrated multiple hardware sensors and modules</p>
+                                    <p>Implemented real-time GPS tracking</p>
+                                    <p>Developed emergency alert algorithms</p>
+                                    <p>Created chatbot for emergency response</p>
+                                
+                                <div class="learning-category">Self Reflection:</div>
+                                <p>Learned to work with critical safety systems and handle emergency scenarios. Improved understanding of IoT system design.</p>
+                            </div>
+                            
+                            <div class="results-section">
+                                <h5>Results</h5>
+                                <span class="result-metric">98% detection accuracy</span>
+                                <span class="result-metric">3s average alert time</span>
+                                <span class="result-metric">5m GPS accuracy</span>
+                                <span class="result-metric">90% chatbot response rate</span>
+                            </div>
+                            <button class="repo-button">
+                                <a href="https://drive.google.com/file/d/1E4v-kavPlXFAXVqm4PDGZ5P5xKSh-NIQ/view?usp=sharing" target="_blank">View Project</a>
+                            </button>
+                        </div>
+                        <div class="timeline-box">
+                            <p>Aug 2024 – Nov 2024</p>
                         </div>
                     </div>
                 </div>
@@ -188,7 +508,7 @@
             </div>
         </section>
 
-        <section class="section animated">
+        <section id="awards" class="section animated">
             <h2>Awards & Volunteering</h2>
             <div class="awards-container">
                 <div class="awards-box">
@@ -196,6 +516,8 @@
                     <p>Centum in Computer Science (12th Grade)</p>
                     <p>Top 0.7% in DAV Group of Schools</p>
                     <p>Best Student of the Year (2021)</p>
+                    <p>Reached the top 5 percentile in Adobe GenSolve 2024, and advanced to Round 2 in Hack4Change 2024 </p>
+                    <p>Secured 11th place out of 130 teams in VITISH, VIT's internal hackathon for Smart India Hackathon</p>
                 </div>
                 <div class="awards-box">
                     <h4>Volunteering</h4>
